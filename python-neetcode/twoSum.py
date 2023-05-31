@@ -14,7 +14,7 @@
 # Output: [0,1]
 # Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 
-# FASTEST SOLUTION
+# FASTEST SOLUTION!
 class Solution(object):
     # o(n^2 algorithm)
     def twoSum(self, nums, target):
