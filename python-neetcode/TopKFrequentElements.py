@@ -5,7 +5,7 @@ class Solution(object):
         :type k: int
         :rtype: List[int]
         """
-        # O(2n + k) > O(n)
+        # O(nlogn) cuz sorted
         # Ω(4n)?? 
         # create a hash map that keeps {value in array: number 
         # of times
