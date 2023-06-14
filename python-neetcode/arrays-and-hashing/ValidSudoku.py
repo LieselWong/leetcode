@@ -1,3 +1,5 @@
+import collections
+
 def isValidSudoku(self, board):
         """
         :type board: List[List[str]]
