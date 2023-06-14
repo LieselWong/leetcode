@@ -2,8 +2,10 @@
 
 A repository for me to upload my notes + solutions to leetcode interview questions
 
+### Github Shortcuts
+
 ```
 git add ./\*.py 
 ``` 
-* DEFINTION: we add every (\\\*) python file (.py) in current director (./)
+* We add every (\\\*) python file (.py) in current director (./)
   * can stage deleted files using this
