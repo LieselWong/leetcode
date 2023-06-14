@@ -8,6 +8,8 @@ def isPalindrome(s):
         # l = ['a', 'b', 'c']
         # ''.join(l) = "abc"
         
+        # O(n) 
+
         # convert to lowercase
         # read string forwards + remove alphanumeric, store
         forwards = ''.join([c for c in s.lower() if c.isalnum()])
