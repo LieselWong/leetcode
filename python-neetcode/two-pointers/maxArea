@@ -1,0 +1,47 @@
+def maxArea(height):
+        """
+        :type height: List[int]
+        :rtype: int
+        """
+
+        # maxArea variable 
+        maxArea = 0
+        # currentArea variable 
+        currentArea = 0
+        # Start Left pointer at beginnign, Right pointer at end
+        l = 0
+        r = len(height) - 1
+        h = max(height)
+        while (l < r):
+            # Calculate and store area 
+            currentArea = (r - l) * min(height[r], height[l])
+            maxArea = max(maxArea, currentArea)
+            # If left pointer height > right pointer height, r -= 1
+            if (height[l] > height[r]): 
+                r -= 1
+            # if there is no way for this distance to be larger
+            # than maximum area break and don't check the rest
+            elif (r-l) * h <= maxArea:
+                break
+            # if left < right or left = right, just move one bar 
+            else: 
+                l+= 1
+        return maxArea
+
+
+""" 
+def maxArea(height):
+
+        # maxArea variable 
+        maxArea = 0
+        # currentArea variable 
+        currentArea = 0
+        for i in range(len(height)): 
+            for z in range(i + 1, len(height)): 
+                currentArea = (z - i) * min(height[i], height[z])
+                if (currentArea > maxArea): 
+                    maxArea = currentArea
+        return maxArea 
+"""
+
+print(maxArea([2,3,4,5,18,17,6]))
