@@ -4,7 +4,7 @@ def maxArea(height):
         :rtype: int
         """
 
-        # maxArea variable 
+        # maxArea variable !
         maxArea = 0
         # currentArea variable 
         currentArea = 0
