@@ -26,6 +26,11 @@ def maxArea(height):
             # if left < right or left = right, just move one bar 
             else: 
                 l+= 1
+        x = [1, 2, 3]
+        y = [1, 2, 3]
+        print(x == y)
+        print(x is y)
+        print([1, 2, 3] is [1, 2, 3])
         return maxArea
 
 
